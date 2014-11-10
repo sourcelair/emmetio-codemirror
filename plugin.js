@@ -133,8 +133,12 @@ define(['./editor', 'emmet/emmet'], function(editor, emmet) {
 	 */
 	function addKeybinding(key, action) {
 		key = systemKeybinding(key);
-		CodeMirror.keyMap['default'][key] = 'emmet.' + action;
+		CodeMirror.keyMap.emmet.key = 'emmet.' + action;
 	}
+    
+    if (typeof CodeMirror.keyMap.emmet == 'undefined') {
+        CodeMirror.keyMap.emmet = {fallthrough: 'default'};
+    }
 
 	// add actions and default keybindings
 	Object.keys(defaultKeymap).forEach(function(key) {
@@ -167,7 +171,7 @@ define(['./editor', 'emmet/emmet'], function(editor, emmet) {
 		 * Clears all Emmet keybindings
 		 */
 		clearKeymap: function() {
-			var cmMap = CodeMirror.keyMap['default'];
+			var cmMap = CodeMirror.keyMap.emmet;
 			var reEmmetAction = /^emmet\./;
 			Object.keys(cmMap).forEach(function(p) {
 				if (reEmmetAction.test(cmMap[p])) {
@@ -185,7 +189,7 @@ define(['./editor', 'emmet/emmet'], function(editor, emmet) {
 		 */
 		removeKeybinding: function(name) {
 			name = systemKeybinding(name);
-			var cmMap = CodeMirror.keyMap['default'];
+			var cmMap = CodeMirror.keyMap.emmet;
 			if (name in cmMap) {
 				delete cmMap[name];
 			} else {
