@@ -1,0 +1,13 @@
+{
+  "name": "zen",
+  "homepage": "https://github.com/emmetio/emmet",
+  "_release": "v1.1",
+  "_resolution": {
+    "type": "tag",
+    "tag": "v1.1",
+    "commit": "d4c2698a837036cc6c7f6cc454b4b6850a3e0c48"
+  },
+  "_source": "git://github.com/emmetio/emmet.git",
+  "_target": "v1.1",
+  "_originalSource": "zen"
+}

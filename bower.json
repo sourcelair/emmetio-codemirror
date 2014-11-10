@@ -1,4 +1,7 @@
 {
     "name": "sourcelair-emmetio-codemirror",
-    "version": "0.1"
+    "version": "0.1",
+    "dependencies": {
+        "zen": "v1.1"
+    }
 }
