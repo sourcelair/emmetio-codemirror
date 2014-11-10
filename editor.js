@@ -4,10 +4,10 @@
  * should run acttion multiple times and update `selectionIndex`
  * property on each iteration.
  */
-define(['./vendor/emmet/utils/common',
-        './vendor/emmet/utils/action',
-        './vendor/emmet/assets/resources',
-        './vendor/emmet/assets/tabStops'], function(utils, actionUtils, res, tabStops) {
+define(['./vendor/emmet/lib/utils/common',
+        './vendor/emmet/lib/utils/action',
+        './vendor/emmet/lib/assets/resources',
+        './vendor/emmet/lib/assets/tabStops'], function(utils, actionUtils, res, tabStops) {
 	/**
 	 * Converts CM’s inner representation of character
 	 * position (line, ch) to character index in text
