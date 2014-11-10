@@ -1,3 +1,9 @@
+require.config({
+    paths: {
+        lodash: './vendor/lodash/dist/lodash'
+    }
+});
+
 /**
  * Emmet plugin for CodeMirror
  */
