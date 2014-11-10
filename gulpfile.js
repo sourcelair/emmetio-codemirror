@@ -16,8 +16,7 @@ gulp.task('default', function() {
 
 	return requirejs({
 		baseUrl: './',
-		name: 'vendor/almond',
-		include: ['./plugin'],
+		name: 'plugin',
 		out: 'emmet.js',
 		paths: {
 			emmet: 'node_modules/emmet/lib',
