@@ -1,7 +1,7 @@
 {
     "name": "sourcelair-emmetio-codemirror",
-    "version": "0.2",
+    "version": "0.3",
     "dependencies": {
-        "zen": "v1.1"
+        "emmet": "git@github.com:emmetio/emmet.git#v1.1"
     }
 }

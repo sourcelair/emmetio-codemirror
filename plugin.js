@@ -1,7 +1,7 @@
 /**
  * Emmet plugin for CodeMirror
  */
-define(['./editor', './vendor/zen/lib/emmet'], function(editor, emmet) {
+define(['./editor', './vendor/emmet/lib/emmet'], function(editor, emmet) {
 	var mac = /Mac/.test(navigator.platform);
 	var defaultKeymap = {
 		'Cmd-E': 'expand_abbreviation',
